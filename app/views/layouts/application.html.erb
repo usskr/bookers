@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <%= flash[:create] %>
+    <%= flash[:update] %>
+    <%= flash[:destroy] %>
     <%= yield %>
   </body>
 </html>
