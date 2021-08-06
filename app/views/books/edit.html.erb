@@ -8,11 +8,12 @@
 <% end %>
 
 <%= form_with model:@book, local: true do |f| %>
-  <p>Title</p>
+  <p class="text">Title</p>
   <%= f.text_field :title %>
-  <p>Body</p>
+  <p class="text">Body</p>
   <%= f.text_area :body %>
-  <%= f.submit 'Update Book' %>
+  <br>
+  <%= f.submit 'Update Book', class:"button" %>
 <% end %>
 
 <%= link_to "Show", book_path(@book) %>

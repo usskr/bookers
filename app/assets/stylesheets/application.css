@@ -46,14 +46,11 @@ p, ol, ul, td {
   margin: 33px;
 }
 
-a:-webkit-any-link {
-  color: -webkit-link;
+a:hover {
+  color: white;
+  background-color: black;
   cursor: pointer;
   text-decoration: underline;
-}
-
-#notice {
-  color: green;
 }
 
 table {
@@ -79,13 +76,10 @@ tr {
 
 th {
     padding-bottom: 5px;
-}
-
-th {
     display: table-cell;
     vertical-align: inherit;
     font-weight: bold;
-    text-align: -internal-center;
+    text-align: center;
 }
 
 tbody {
@@ -110,3 +104,10 @@ h2 {
     font-weight: bold;
 }
 
+.text {
+  margin: 10px auto 0;
+}
+
+.button {
+  margin: 10px auto;
+}
