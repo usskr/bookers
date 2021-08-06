@@ -1,5 +1,5 @@
-<p id="notice"></p>
 <h1>Books</h1>
+
 <table>
   <thead>
     <tr>
@@ -32,6 +32,14 @@
 </table>
 
 <h2>New book</h2>
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>error prohibited this book from being saved:
+  <% @book.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
 <%= form_with model:@book, local:true do |f| %>
 
   <p>Title</p>
